@@ -10,8 +10,3 @@ function getPlugins() {
   const plugins = [react(), tsconfigPaths()];
   return plugins;
 }
-
-export default defineConfig({
-  plugins: getPlugins(),
-  base: './', // ✅ 关键：让资源路径改为相对路径
-});
