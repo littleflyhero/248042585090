@@ -10,3 +10,7 @@ function getPlugins() {
   const plugins = [react(), tsconfigPaths()];
   return plugins;
 }
+
+export default defineConfig({
+  plugins: getPlugins(),
+});
